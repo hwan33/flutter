@@ -5,7 +5,6 @@ void main() {
 }
 
 class ColumnWidgetExample extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,29 +12,19 @@ class ColumnWidgetExample extends StatelessWidget {
         body: SizedBox(
           width: double.infinity,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-
             children: [
-              Container(
-                height: 50,
-                width: 50,
-                color: Colors.red,
+              Flexible(
+                flex: 1,
+                child: Container(
+                  color: Colors.blue,
+                ),
               ),
-
-              const SizedBox(width: 12),
-              Container(
-                height: 50,
-                width: 50,
-                color: Colors.green,
-              ),
-
-              const SizedBox(width: 12,),
-              Container(
-                height: 50,
-                width: 50,
-                color: Colors.blue,
-              ),
+              Flexible(
+                flex: 1,
+                child: Container(
+                  color: Colors.red,
+                ),
+              )
             ],
           ),
         ),
