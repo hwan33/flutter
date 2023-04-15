@@ -11,12 +11,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-            child: OutlinedButton(
+            child: ElevatedButton(
               onPressed: () {},
-              style: OutlinedButton.styleFrom(
+              style: ElevatedButton.styleFrom(
                 foregroundColor: Colors.red,
               ),
-              child: Text('아웃라인 버튼'),
+              child: Text('엘리베이트 버튼'),
             )
         ),
       ),
