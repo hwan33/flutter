@@ -223,3 +223,4 @@ fabric.properties
 !/gradle/wrapper/gradle-wrapper.jar
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,androidstudio,flutter
+/.idea/git_toolbox_prj.xml

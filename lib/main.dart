@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            'Hello Code Factory',
-          ),
-        )
+      MaterialApp(
+          debugShowCheckedModeBanner: false,
+          home: Scaffold(
+              body: Center(
+
+                child: Text('Code Factory'),
+              )
+          )
       )
-    )
   );
 }
