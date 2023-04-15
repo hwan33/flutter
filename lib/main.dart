@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(RowWidgetExample());
+  runApp(ColumnWidgetExample());
 }
 
-class RowWidgetExample extends StatelessWidget {
+class ColumnWidgetExample extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: SizedBox(
-          height: double.infinity,
-          child: Row(
+          width: double.infinity,
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
 
@@ -23,18 +23,19 @@ class RowWidgetExample extends StatelessWidget {
                 color: Colors.red,
               ),
 
-              const SizedBox(width: 12,),
+              const SizedBox(width: 12),
               Container(
                 height: 50,
                 width: 50,
                 color: Colors.green,
               ),
+
               const SizedBox(width: 12,),
               Container(
                 height: 50,
                 width: 50,
                 color: Colors.blue,
-              )
+              ),
             ],
           ),
         ),
