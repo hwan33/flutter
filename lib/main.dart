@@ -11,15 +11,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text(
-            '코드팩토리',
-
-            style: TextStyle(
-              fontSize: 16.0,
-              fontWeight: FontWeight.w700,
-              color: Colors.blue,
-            ),
-          ),
+            child: TextButton(
+              onPressed: () {},
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.red,
+              ),
+              child: Text('텍스트 버튼'),
+            )
         ),
       ),
     );
