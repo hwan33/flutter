@@ -5,9 +5,16 @@ void main() {
       MaterialApp(
           debugShowCheckedModeBanner: false,
           home: Scaffold(
-              body: Center(
+              body: SizedBox(
+                width: double.infinity,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
 
-                child: Text('Code Factory'),
+                  children: [
+                    Text('Code'),
+                    Text('Factory'),
+                  ],
+                ),
               )
           )
       )
