@@ -11,12 +11,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Center(
-            child: TextButton(
+            child: OutlinedButton(
               onPressed: () {},
-              style: TextButton.styleFrom(
+              style: OutlinedButton.styleFrom(
                 foregroundColor: Colors.red,
               ),
-              child: Text('텍스트 버튼'),
+              child: Text('아웃라인 버튼'),
             )
         ),
       ),
