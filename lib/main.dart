@@ -11,17 +11,22 @@ class ColumnWidgetExample extends StatelessWidget {
       home: Scaffold(
         body: SizedBox(
           width: double.infinity,
-          child: Column(
+          child: Stack(
             children: [
-              Expanded(
-                child: Container(
-                  color: Colors.blue,
-                ),
+              Container(
+                height: 300,
+                width: 300,
+                color: Colors.red,
               ),
-              Expanded(
-                child: Container(
-                  color: Colors.red,
-                ),
+              Container(
+                height: 250,
+                width: 250,
+                color: Colors.yellow,
+              ),
+              Container(
+                height: 200,
+                width: 200,
+                color: Colors.blue,
               ),
             ],
           ),
