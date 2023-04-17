@@ -9,8 +9,13 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Splash Screen'),
+        body: Container(
+          decoration: BoxDecoration(
+            color: Colors.orange,
+          ),
+          child: Center(
+            child: Text('Splash Screen'),
+          ),
         ),
       ),
     );
