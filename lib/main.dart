@@ -14,6 +14,7 @@ class SplashScreen extends StatelessWidget {
             color: Color(0xFFF99231),
           ),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
                 'assets/logo.png',
