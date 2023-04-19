@@ -13,14 +13,19 @@ class SplashScreen extends StatelessWidget {
           decoration: BoxDecoration(
             color: Color(0xFFF99231),
           ),
-          child: Column(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                'assets/logo.png',
-                width: 200,
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    'assets/logo.png',
+                    width: 200,
+                  ),
+                  CircularProgressIndicator(),
+                ],
               ),
-              CircularProgressIndicator(),
             ],
           ),
         ),
